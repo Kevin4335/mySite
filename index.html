@@ -11,14 +11,23 @@
   <body>
     <script src="./JS/script.js"></script>
     <main>
-        <h1>Welcome to My Website</h1>
-        <div><button class = "darkModeButton" onclick="darkMode()">🌙</button></div>
-        <p class = "text">
+        <nav id="navbar">
             
-            Hello, my name is Kevin Chang, a third year Computer Science student at the University of Michigan, 
-            with a minor in User Experience Design. I have experience with C++, C, Python, JS, HTML, CSS, and Verilog.
-        
-        </p>
+            <a href = "index.html"><u>About</u></a>
+            <div><button class = "darkModeButton" onclick="darkMode()">🌑</button></div>
+
+        </nav>
+        <h1>About Me</h1>
+        <div class="grid-container">
+            <p class = "text" id = "about_me">
+                
+                Hi, I'm Kevin Chang, currently in my third year studying Computer Science at the University of Michigan, with a minor in User Experience Design. 
+                I'm proficient in a range of programming languages including C++, C, Python, JavaScript, HTML, CSS, and Verilog.
+                In addition to my studies, I'm deeply passionate about programming. It's not just a skill set for me; it's a genuine interest. I enjoy tackling complex problems and finding elegant solutions through code.
+            
+            </p>
+            <img id = "profile_pic" src = "./images/temp_image.png">
+        </div>
     </main>
   </body>
 </html>
