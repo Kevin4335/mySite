@@ -2,26 +2,25 @@
 var expires = (new Date(Date.now()+ 86400*1000)).toUTCString();
 function init_cookies(){
     console.log("RAN");
-    if(!document.cookie){
-        document.cookie = "dark_or_light=0; SameSite=lax; expires=" + expires + ";path=/;"
-    }
+
+    localStorage.setItem("dark_or_light", 0);
+    
     
 }
 
 function darkMode() {
     var element = document.body;
     //element.classList.toggle("light-mode");
-    console.log(document.cookie);
 
-    if(document.cookie[14] == '1'){
-        document.cookie = "dark_or_light=0; SameSite=lax; expires=" + expires + ";path=/;"
+    if(localStorage.getItem("dark_or_light") == 1){
+        localStorage.setItem("dark_or_light", 0);
         element.classList.remove("light-mode");
         document.getElementsByClassName("darkModeButton")[0].textContent = "☀️";
         document.getElementsByClassName("darkModeButton")[0].style.backgroundColor = "#3A3858";
         document.getElementById("navbar").style.backgroundColor="#352B42";
     
     }else{
-        document.cookie = "dark_or_light=1; SameSite=lax; expires=" + expires + ";path=/;"
+        localStorage.setItem("dark_or_light", 1);
         element.classList.add("light-mode");
         document.getElementsByClassName("darkModeButton")[0].textContent = "🌑";     
         document.getElementById("navbar").style.backgroundColor="#E5CEB4";
