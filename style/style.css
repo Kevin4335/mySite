@@ -27,17 +27,13 @@ nav>a{
     float:right;
 }
 
-#about_me{
-    width:45%;
-
+.containee{
+    
     border:#5F556A solid 5px;
     border-radius: 50px 50px 50px 50px;
     padding:15px;
-    
 }
-#profile_pic{
-    margin-right:150px;
-}
+
 
 a{
     text-decoration: none;
@@ -56,6 +52,7 @@ h1{
     
     margin-left: 10%;
     margin-right: 10%;
+    gap:50px;
 }
 
 .text{
