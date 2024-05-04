@@ -1,6 +1,6 @@
 //1 Day = 24 Hrs = 24*60*60 = 86400.
 
-function init_dark_or_light(){
+function init_dark_or_light() {
     var element = document.body;
     //element.classList.toggle("light-mode");
 
